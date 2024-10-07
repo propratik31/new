@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: $white;
+  cursor: default;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 15px;
+}
+
+span{
+  font-size: 1.15em;
+
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+ul {
+  list-style-type:none;
+  padding: 0;
+}
+
+h2 {
+  color:black;
+}
+
+h3 {
+  color: $orange;
+  margin: 10px 0;
+
+  font-size: 1.25em;
+}
+
+.name{
+  color: $black;
+  text-transform: uppercase;
+  
+  
+}
+
+.resume {
+  width: 960px;
+  background:radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+  color: $white;
+  margin: 30px auto;
+  box-shadow: 10px 10px $black;
+  position: relative;
+  display: flex;
+  border: 1px solid #885df1;
+
+}
+
+.work {
+ width: 190px;
+ height: 354px;
+ background-image: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.work {
+ width: 190px auto;
+ height: 254px auto;
+ background-color: #1a1a1a;
+ border-radius:;
+ transition: all .2s;
+}
+
+.work:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.work:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.edu {
+ width: 190px;
+ height: 354px;
+ background-image: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.edu {
+ width: 190px auto;
+ height: 254px auto;
+ background-color: #1a1a1a;
+ border-radius:20px;
+ transition: all .2s;
+}
+
+.edu:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.edu:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.skills-prog {
+ width: 270px;
+ height: 354px;
+ background-image: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.skills-prog {
+ width: 190px auto;
+ height: 254px auto;
+ background-color: #1a1a1a;
+ border-radius:;
+ transition: all .2s;
+}
+
+.skills-prog:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.skills-prog:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.resume .func .skills-prog,
+.resume .func .courses{
+  float: left;
+}
+
+
+
+
+
+
+.skills-soft {
+  padding-top: 500px;
+ width: 250px;
+ height: 170px;
+ background-image: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.skills-soft {
+ width: 200px auto;
+ height: 254px auto;
+ background-color: #1a1a1a;
+ border-radius:;
+ transition: all .2s;
+}
+
+.skills-soft:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.skills-soft:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.about {
+  position: relative;
+  width: 250px;
+  height: 450px;
+  background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.about::before,
+.about::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: lighter;
+  background:radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+  transition: all 0.5s;
+  text-align: justify;
+
+
+}
+
+.about::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.about::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.about:hover::before,
+.about:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.about:hover:after {
+  padding-right: 10px;
+  padding-left: 10px;
+  content:"__Recent graduate with a degree in Electronics and Telecommunication Engineeing and a passion for DevOps. Proficient in Docker, Kubernetes, Jenkins, and scripting languages (Python, Bash, PowerShell). Strong understanding of cloud computing, CI/CD pipelines, networking, and security principles, eager to apply academic knowledge in a dynamic IT environment.";
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.interests {
+ width: 250px;
+ height: 170px;
+ background-image: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.interests {
+ width: 200px auto;
+ height: 254px auto;
+ background-color: #1a1a1a;
+ border-radius:;
+ transition: all .2s;
+}
+
+.interests:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.interests:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.projects {
+
+ width: 280px;
+ height: 370px;
+ background-image: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.projects{
+
+ width: 190px auto;
+ height: 254px auto;
+ background-color: #1a1a1a;
+ border-radius:;
+ transition: all .2s;
+}
+
+.projects:hover {
+ transform: scale(0.98);
+ border-radius: 20px;
+}
+
+.projects:hover {
+ box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
+
+
+
+.resume .interests,
+.resume .skills-soft,
+.resume .projects{
+  float: right;
+}
+
+.resume .skills-soft,
+.resume .interests{
+  float: left;
+}
+
+
+
+
+button {
+  text-decoration: none;
+  position: relative;
+  border: none;
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  color: #fff;
+  width: 9em;
+  height: 3em;
+  line-height: 2em;
+  text-align: center;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 300%;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+button:hover {
+  animation: ani 8s linear infinite;
+  border: none;
+}
+
+@keyframes ani {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 35px;
+  transition: 1s;
+}
+
+button:blur(20px);
+}
+
+button:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards .red {
+  background:linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+ 
+}
+
+.cards .blue {
+  background:linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+}
+
+.cards .green {
+  background:linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 70px;
+  width: 240px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+
+
+
+
+
+.fa {
+  padding: 13px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-instagram{
+  width:130px;
+  color: white;
+}
+
+/* Twitter */
+.fa-github {
+  
+  color: white;
+  width: 130px;
+}
+
+.fa-linkedin {
+    color: white;
+  width: 130px;
+}
+
+
+.resume .base,
+.resume .func {
+  box-sizing: border-box;
+  float: left;
+}
+.resume .base > div,
+.resume .func > div {
+  padding-bottom: 10px;
+}
+.resume .base > div:last-of-type,
+.resume .func > div:last-of-type {
+  padding-bottom: 0;
+}
+.resume .base {
+  width: 50%;
+  padding: 50px;
+  background: $darker-blue;
+  color: $white;
+}
+.resume .base .profile {
+  background: $orange;
+  padding: 60px 15px 0px 25px;
+  margin: -60px -15px 45px -15px;
+  position: relative;
+  z-index: 2;
+}
+.resume .base .profile::after {
+  content: "";
+  position: absolute;
+  background: $dark-blue;
+  width: 100%;
+  height: 30px;
+  bottom: -15px;
+  left: 0;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+}
+.resume .base .profile .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume .base .profile .fa-rocket {
+  font-size: 100px;
+  text-align: center;
+  margin: auto;
+  color: $darker-blue;
+}
+.resume .base .profile .info {
+  text-align: center;
+  color: $white;
+}
+.resume .base .profile .info .name {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 2.1em;
+  
+  color: $darkest-blue;
+}
+.resume .base .profile .info .job {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 1.50em;
+ 
+  color: $darker-blue;
+}
+.resume .base .contact div {
+  line-height: 30px;
+  font-size: 17px;
+}
+.resume .base .contact div a:hover {
+  color: $yellow;
+}
+.resume .base .contact div a:hover span::after {
+  width: 100%;
+}
+.resume .base .contact div:hover i {
+  color: $yellow;
+}
+.resume .base .contact div i {
+  color: $orange;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 15px;
+  transition-duration: 0.3s;
+}
+.resume .base .contact div span {
+  position: relative;
+}
+.resume .base .contact div span::after {
+  
+  position: absolute;
+  background: $yellow;
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+}
+.resume .base .follow .box {
+  text-align: center;
+  vertical-align: middle;
+}
+.resume .base .follow .box a {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.resume .base .follow .box a:hover i {
+  background: $yellow;
+  border-radius: 5px;
+  transform: rotate(45deg) scale(0.8);
+}
+.resume .base .follow .box a:hover i::before {
+  transform: rotate(-45deg) scale(1.5);
+}
+.resume .base .follow .box i {
+  display: inline-block;
+  font-size: 30px;
+  background: $orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  color: $darker-blue;
+  margin: 0 10px 10px 10px;
+  transition-duration: 0.3s;
+}
+.resume .base .follow .box i::before {
+  transition-duration: 0.3s;
+}
+.resume .base .follow .box i.fa::before {
+  display: block;
+}
+
+.box:active {
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+
+.resume .func {
+  width: 100%;
+  padding: 30px;
+}
+.resume .func:hover > div {
+  transition-duration: 0.5s;
+}
+.resume .func:hover > div:hover h3 i {
+  transform: scale(1.25);
+}
+.resume .func:hover > div:not(:hover) {
+  opacity: 0.5;
+}
+.resume .func h3 {
+  transition-duration: 0.3s;
+  margin-top: 0;
+}
+.resume .func h3 i {
+  color: $darker-blue;
+  background: $orange;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition-duration: 0.3s;
+}
+.resume .func .work,
+.resume .func .edu {
+  float: left;
+}
+.resume .func .work small,
+.resume .func .edu small {
+  display: block;
+  opacity: 0.7;
+}
+.resume .func .work ul li,
+.resume .func .edu ul li {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+.resume .func .work ul li:hover::before,
+.resume .func .edu ul li:hover::before {
+  animation: circle 1.2s infinite;
+}
+.resume .func .work ul li:hover span,
+.resume .func .edu ul li:hover span {
+  color: $yellow;
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px $yellow;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+.resume .func .work ul li:first-of-type::before,
+.resume .func .edu ul li:first-of-type::before {
+  width: 10px;
+  height: 10px;
+  left: 1px;
+}
+.resume .func .work ul li:last-of-type,
+.resume .func .edu ul li:last-of-type {
+  padding-bottom: 3px;
+}
+.resume .func .work ul li:last-of-type::after,
+.resume .func .edu ul li:last-of-type::after {
+  border-radius: 1.5px;
+}
+.resume .func .work ul li::before,
+.resume .func .work ul li::after,
+.resume .func .edu ul li::before,
+.resume .func .edu ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.resume .func .work ul li::before,
+.resume .func .edu ul li::before {
+  width: 7px;
+  height: 7px;
+  border: 3px solid $white;
+  background: $orange;
+  border-radius: 50%;
+  left: 3px;
+  z-index: 1;
+}
+.resume .func .work ul li::after,
+.resume .func .edu ul li::after {
+  width: 3px;
+  height: 100%;
+  background: $white;
+  left: 5px;
+  top: 0;
+}
+.resume .func .work ul li span,
+.resume .func .edu ul li span {
+  transition-duration: 0.3s;
+}
+.resume .func .work {
+  width: 48%;
+  background: $darker-blue;
+  padding: 15px;
+  margin: 0 4% 15px 0;
+}
+.resume .func .edu {
+  width: 48%;
+  background: $darker-blue;
+  padding: 15px;
+}
+.resume .func .skills-prog {
+  clear: both;
+  background: $darker-blue;
+  padding: 15px;
+}
+.resume .func .skills-prog ul {
+  margin-left: 15px;
+}
+.resume .func .skills-prog ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+.resume .func .skills-prog ul li:hover {
+  color: $yellow;
+}
+.resume .func .skills-prog ul li:hover .skills-bar .bar {
+  background: $yellow;
+  box-shadow: 0 0 0 1px $yellow;
+}
+.resume .func .skills-prog ul li span {
+  display: block;
+  width: 120px;
+}
+.resume .func .skills-prog ul li .skills-bar {
+  background: $white;
+  height: 2px;
+  width: calc(100% - 120px);
+  position: relative;
+  border-radius: 2px;
+}
+.resume .func .skills-prog ul li .skills-bar .bar {
+  position: absolute;
+  top: -1px;
+  height: 4px;
+  background: $orange;
+  box-shadow: 0 0 0 $orange;
+  border-radius: 5px;
+}
+.resume .func .skills-soft  {
+  clear: both;
+  background: $darker-blue;
+  padding: 15px;
+  margin: 15px 0 0;
+}
+.resume .func .skills-soft ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.resume .func .skills-soft ul li {
+  position: relative;
+}
+.resume .func .skills-soft  ul li:hover svg .cbar {
+  stroke: $yellow;
+  stroke-width: 4px;
+}
+.resume .func .skills-soft  ul li:hover span,
+.resume .func .skills-soft  ul li:hover small {
+  transform: scale(1.2);
+}
+.resume .func .skills-soft ul li svg {
+  width: 95%;
+  fill: transparent;
+  transform: rotate(-90deg);
+}
+.resume .func .skills-soft  ul li svg circle {
+  stroke-width: 1px;
+  stroke: $white;
+}
+.resume .func .skills-soft  ul li svg .cbar {
+  stroke-width: 3px;
+  stroke: $orange;
+  stroke-linecap: round;
+}
+.resume .func .skills-soft  ul li span,
+.resume .func .skills-soft  ul li small {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: 52%;
+  transition-duration: 0.3s;
+}
+.resume .func .skills-soft  ul li span {
+  top: 40%;
+}
+.resume .func .interests {
+  background: $darker-blue;
+  margin: 15px 0 0;
+  padding: 15px;
+}
+.resume .func .interests-items {
+  box-sizing: border-box;
+  padding: 0 0 15px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.resume .func .interests-items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.resume .func .interests-items div:hover i {
+  transform: scale(1.2);
+}
+.resume .func .interests-items div:hover span {
+  color: $yellow;
+  transition-duration: 0.3s;
+}
+.resume .func .interests-items div i {
+  font-size: 45px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: $orange;
+  transition-duration: 0.3s;
+}
+.resume .func .interests-items div span {
+  display: block;
+}
+
